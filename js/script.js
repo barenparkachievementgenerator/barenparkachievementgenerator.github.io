@@ -6,63 +6,35 @@ window.onload = function () {
 
 function generate_achievements() {
 
-    // Making two separate arrays isn't great
-    // but the data is never going to change
-    // and arrays always keep the same order unlike objects
-
     var card_names = [
-        "Long Food Street",
-        "Long River",
-        "Pandas",
-        "Animal Houses",
-        "Polar Bears",
-        "Enclosures",
-        "Twice is Nice",
-        "Gobi Bears",
-        "Green Areas",
-        "Koalas",
+        ["Long Food Street", "images/long_food_street.png"],
+        ["Long River", "images/long_river.png"],
+        ["Pandas", "images/pandas.png"],
+        ["Animal Houses", "images/animal_houses.png"],
+        ["Polar Bears", "images/polar_bears.png"],
+        ["Enclosures", "images/enclosures.png"],
+        ["Twice is Nice", "images/twice_is_nice.png"],
+        ["Gobi Bears", "images/gobi_bears.png"],
+        ["Green Areas", "images/green_areas.png"],
+        ["Koalas", "images/koalas.png"],
     ]
-    var card_images = [
-        "images/long_food_street.png",
-        "images/long_river.png",
-        "images/pandas.png",
-        "images/animal_houses.png",
-        "images/polar_bears.png",
-        "images/enclosures.png",
-        "images/twice_is_nice.png",
-        "images/gobi_bears.png",
-        "images/green_areas.png",
-        "images/koalas.png",
-    ]
-
 
     // Card one
     var randomint = Math.floor(Math.random() * 10);
-    var card_one = card_names[randomint];
-    var card_one_image = card_images[randomint];
-
-    var i = card_names.indexOf(card_one);
-    if (i != -1) {
-        card_names.splice(i, 1);
-        card_images.splice(i, 1)
-    }
+    var card_one = card_names[randomint][0];
+    var card_one_image = card_names[randomint][1];
+    card_names.splice(randomint, 1);
 
     // Card two
     var randomint = Math.floor(Math.random() * 9);
-    var card_two = card_names[randomint];
-    var card_two_image = card_images[randomint];
-
-    var i = card_names.indexOf(card_two);
-    if (i != -1) {
-        card_names.splice(i, 1);
-        card_images.splice(i, 1)
-    }
-
+    var card_two = card_names[randomint][0];
+    var card_two_image = card_names[randomint][1];
+    card_names.splice(randomint, 1);
 
     // Card three
     var randomint = Math.floor(Math.random() * 8);
-    var card_three = card_names[randomint];
-    var card_three_image = card_images[randomint];
+    var card_three = card_names[randomint][0];
+    var card_three_image = card_names[randomint][1];
 
     // Adding images and text
     document.querySelector("#card_one > .card-body > .card-text").innerHTML = card_one;

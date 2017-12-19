@@ -34,11 +34,15 @@
     min-height: 300px;
 }
 
+.card-body {
+    padding: 1.25rem 0;
+}
+
 
 /* sticky footer */
 
 html {
-    /* position: relative; */
+    position: relative;
     min-height: 100%;
 }
 
