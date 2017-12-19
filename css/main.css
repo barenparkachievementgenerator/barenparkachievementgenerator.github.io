@@ -1,0 +1,68 @@
+/* * {
+    border: 1px solid white;
+} */
+
+.title,
+.subtitle {
+    color: #f0d583;
+}
+
+.container-fluid {
+    background: #a74803;
+}
+
+.fill {
+    min-height: 100vh;
+}
+
+.btn {
+    cursor: pointer
+}
+
+#generator_button {
+    color: black;
+    background-color: #f0d583;
+    border-color:white;
+    min-width: 250px;
+}
+
+.card {
+    min-height: 100%;
+}
+
+.card-image-top {
+    min-height: 300px;
+}
+
+
+/* sticky footer */
+
+html {
+    /* position: relative; */
+    min-height: 100%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    min-height: 60px;
+    line-height: 60px;
+    color: blue;
+    background-color: #f0d583;
+}
+
+.subtitle > a {
+    color: #f0d583;
+    text-decoration: underline;
+}
+
+.footer>p,
+.footer>p>a {
+    color: #a74803;
+}
+
+.footer>p>a {
+    text-decoration: underline;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid fill">
+        <div class="row justify-content-center mx-auto pt-4">
+            <div class="col-10">
+                <h2 class="text-sm-center title">Bärenpark Achievement Generator</h2>
+                <h5 class="text-sm-center subtitle">Randomly generates 3 of the <a href="https://boardgamegeek.com/boardgame/219513/barenpark">Bärenpark</a> achievements so you don't have to</h5>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="generator_button">Generate achievements</button>
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center d-none" id="cards_row">
+
+            <div class="col-8 col-sm-4 col-md-3 col-xl-2">
+                <div class="card" id="card_one">
+                    <img class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <p class="card-text font-weight-bold text-center"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-4 col-md-3 col-xl-2 mt-4 mt-sm-0">
+                <div class="card" id="card_two">
+                    <img class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <p class="card-text font-weight-bold text-center"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-4 col-md-3 col-xl-2 mt-4 mt-sm-0">
+                <div class="card" id="card_three">
+                    <img class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <p class="card-text font-weight-bold text-center"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="footer col">
+
+                <p class="m-0">Made by
+                    <a href="https://github.com/edjw">Ed Johnson-Williams</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
