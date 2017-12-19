@@ -17,7 +17,7 @@ function generate_achievements() {
         ["Gobi Bears", "images/gobi_bears.png"],
         ["Green Areas", "images/green_areas.png"],
         ["Koalas", "images/koalas.png"],
-    ]
+    ];
 
     // Card one
     var randomint = Math.floor(Math.random() * 10);
