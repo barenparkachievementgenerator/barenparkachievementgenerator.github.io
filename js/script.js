@@ -37,14 +37,18 @@ function generate_achievements() {
     var card_three_image = card_names[randomint][1];
 
     // Adding images and text
-    document.querySelector("#card_one > .card-body > .card-text").innerHTML = card_one;
     document.querySelector("#card_one > .card-img-top").setAttribute("src", card_one_image);
-
-    document.querySelector("#card_two > .card-body > .card-text").innerHTML = card_two;
     document.querySelector("#card_two > .card-img-top").setAttribute("src", card_two_image);
-
-    document.querySelector("#card_three > .card-body > .card-text").innerHTML = card_three;
     document.querySelector("#card_three > .card-img-top").setAttribute("src", card_three_image);
+
+    document.querySelector("#card_one > .card-body > .card-text").innerHTML = card_one;
+    document.querySelector("#card_two > .card-body > .card-text").innerHTML = card_two;
+    document.querySelector("#card_three > .card-body > .card-text").innerHTML = card_three;
+
+    document.querySelector("#card_one > .card-img-top").setAttribute("alt", card_one);
+    document.querySelector("#card_two > .card-img-top").setAttribute("alt", card_two);
+    document.querySelector("#card_three > .card-img-top").setAttribute("alt", card_three);
+
 
     // Revealing images and text
     document.getElementById("cards_row").classList.remove('d-none');
